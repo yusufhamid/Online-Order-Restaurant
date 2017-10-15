@@ -1,0 +1,157 @@
+<?php
+// Start the session
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apply Avole </title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/coffe9.jpg">
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../javascript/javascript.js"></script>
+</head>
+
+<style>
+/*Background image one in middle*/
+.bgimg-1{
+		background-image: url("../images/team.jpg");
+		min-height: 450px;
+		background-position: center;
+		}
+</style>
+
+<body>
+	<!--side navbar -->
+	<nav class="sidenav h" style="display:none" id="mySidenav">
+	  <a href="javascript:void(0)" class="effect"onclick="click_close()"><button>Close &times;</button></a>
+	  <a class="effect" href="../OnlineOrder/online1.html">Online Orders</a>
+	  <a class="effect" href="../coffee/location.html">Location</a>
+	  <a class="effect" href="../coffee/menu.html">Menu</a>
+	  <a class="effect" href="../coffee/about.html">About</a>
+	  <a class="effect" href="../jobs/apply.html">Jobs</a>
+	</nav>
+	<div id="main"><!--This is JS for side navigation -->
+		<div class="top h"><!--keeps navbar on top -->
+			<!--horizontal navbar -->
+			<ul class="navbar black" id="myNavbar">
+				<li><span class="xlarge effect" onclick="click_open()" id="openNav">&#9776;</span></li>
+				<li><a class="effect" href="../home.html">Home</a></li>
+			</ul>
+		</div><!--End of top navbar-->
+
+		<!--first background image -->
+		<div class="bgimg-1"></div>
+
+		<!--first page content -->
+		<div class="page "> 
+			<center><b><h3>We're Hiring!</h3></b></center><br>
+			<img align="right" src="../images/apply.JPG" height="150" width="150">
+			<b>Server Job Responsibilities:</b><br>
+
+			Serves patrons by providing information to help food and beverage selections; presenting ordered choices; maintaining dining ambiance.<br>
+		 
+			<br><b>Server Job Duties:</b><br>
+			- Prepares room for dining by clothing tables and setting decorations, condiments, candles, napkins, service plates, and utensils.<br>
+			- Protects establishment and patrons by adhering to sanitation, safety, and alcohol beverage control policies.<br>
+			- Helps patrons select food and beverages by presenting menu; offering cocktails and aperitifs; suggesting courses; explaining the chef's specialties; identifying appropriate wines; answering food preparation questions. <br>
+			- Transmits orders to bar and kitchen by recording patrons' choices; identifying patrons' special dietary needs and special requests.</br>
+			- Keeps kitchen staff informed by noting timing of meal progression.</br>
+			- Serves orders by picking up and delivering patrons' choices from bar and kitchen; delivering accompaniments and condiments from service bars.</br>
+			- Responds to additional patron requirements by inquiring of needs; observing dining process.</br>
+			- Maintains table setting by removing courses as completed; replenishing utensils; refilling water glasses; being alert to patron spills or other special needs.</br>
+			- Concludes dining experience by acknowledging choice of restaurant; inviting patrons to return.</br>
+			- Obtains revenues by totaling charges; issuing bill; accepting payment; delivering bill and payment to hostperson; returning change or credit card and signature slip to patrons.</br>
+			- Contributes to team effort by accomplishing related results as needed.<br></br>
+			
+			<b>Server Skills and Qualifications:</b></br>
+			General Math Skills, Verbal Communication, Customer Service, Resolving Conflict, Teamwork, Persistence, Energy Level, Selling to Customer Needs, Thoroughness, Professionalism, Client Relationships
+			
+			<br><br><button class="buttdesign">Apply Now! </button><br>
+		
+			<!-- K is conneted with JQuery to show/hide the application form-->
+			<k>
+				<div id="forms">
+					<form action="upload.php" method="post" enctype="multipart/form-data">
+						<h4>
+							Name
+							<input type="text" name="Names" size="30"><br><br><br>
+
+							Phone number
+							<input type="number" name="number" size="10"><br><br><br>
+
+							Email Address
+							<input type="email" name="email" size="20"><br><br><br>
+							
+							Address
+							
+							<input type="address" name="address" size="30"><br><br><br>
+
+							Resume <br> Select File:  
+							<input type="file" name="fileToUpload" accept="/*" onchange="loadFile(event)"/>  
+							<img src="" id="output" height="100" width="100"/>
+							<br><br>
+							<button class="buttdesign"> Submit</button></h3>
+						</h4>
+					</form>
+				</div><!--end of id forms -->
+			</k>
+		
+			<!--extra spaces -->
+			<br class="clearfloat" />
+			
+		</div><!-- end of page -->
+	
+		<!--Footer end of webpage -->
+		<footer>
+			<!--Button that takes you to the top -->
+			<a href="#"><button class="buttdesign"> ↑ To the top </button></a><br>
+			
+			<center>
+				<!--Social media images connected with link -->
+				Connect with us on social media<br><br>
+				
+				<a href="https://www.facebook.com/CafeRio/" target="_blank">
+				<img src="../images/fb.png" alt="Burger" height="50" width="50">
+						 
+				<a href="https://twitter.com/caferio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+				<img src="../images/twitter.png" alt="Burger" height="50" width="50">
+				
+				<a href="https://www.instagram.com/caferio/" target="_blank">
+				<img src="../images/instagram.png" alt="Burger" height="50" width="50"></a><br><br>
+									
+				<!--Subscription box -->
+				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Email">
+				<button>Subscribe</button><br><br><br>
+				
+				&copy; 2017 by Cafe Avole. All rights reserved.
+			</center>
+		</footer>
+	</div><!-- end of id main -->
+<script>
+//Open/close application forms
+$(document).ready(function(){
+    $("button").click(function(){
+        $("k").toggle();
+    });
+     $("#hide").ready(function(){
+        $("k").hide();
+    });
+});
+
+//uploads picture from computers
+  var loadFile = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var output = document.getElementById('output');
+      output.src = reader.result;
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+</script>
+</body>
+</html>
