@@ -1,0 +1,173 @@
+
+/*footer */
+footer{
+background-color: black;
+padding: 50px 50px 50px 80px;
+color:white;
+
+}
+
+/*navbar text*/
+.h{font-family: "Oswald";
+    font-size: 150%
+  }
+	
+/*Background body */    
+body{
+	background-color:black;
+}
+
+/*Button design*/
+.buttdesign{
+overflow:hidden;
+text-decoration:none!important;
+padding:6px 16px;
+color:#fff;
+background-color: black;
+text-align:center;
+white-space:nowrap}
+.buttdesign:hover{
+box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),
+			0 6px 20px 0 rgba(0,0,0,0.19)}
+
+/*Special design for navbar */		
+.effect{
+overflow:hidden;
+text-decoration:none!important;
+color:#fff;
+text-align:center;
+white-space:nowrap}
+.effect:hover{
+box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),
+			0 6px 20px 0 rgba(0,0,0,0.19)}
+
+/*Background image design in middle */
+.bgimg-1, .bgimg-2  {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	top:0px;
+    }
+
+/*Text area page content */
+.page {
+    background-color: #f2f4f7;
+    padding: 50px 30px 50px 80px;
+}
+
+/*Slideshow images */
+.mySlides {display: none;
+        background-attachment: fixed
+}
+
+
+/*Color for JS navbar */
+.color-red,.color-hover-red:hover{color:#fff!important;background-color:#963131!important}
+
+
+/* Side navigation */
+.xlarge{font-size:24px!important}
+.sidenav{height:100%;width:100px;background-color:gray;position:fixed!important;z-index:1;overflow:auto}
+.sidenav a{text-decoration:none!important;padding:4px 2px 4px 16px;display:block}
+.sidenav a:hover{background-color:#ccc}
+.sidenav-click{min-width:100%}
+
+/* Keeps navbar on top */
+.top{top:0;position:fixed;width:100%;z-index:1}
+
+
+/* horizontal navbar */
+.navbar li{float:left}
+.navbar li a,.w3-navbar li .w3-input{display:block;padding:8px 16px}
+.navbar li a:hover{color:#000;background-color:#ccc}
+.navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.navbar:hover,
+.navbar:first-child,
+.navbar-click{position:static}
+	
+	
+	/* side bar- left side of all pages */
+	#sidebar {
+				width: 280px;
+				float: right;
+				margin: 0 auto;
+				text-align: center;
+				margin-top:25px;
+	}
+	
+	/* contents located in sidebar*/
+	#sidebarContent {
+					width: 250px;
+					margin: 0 auto;
+					padding: 20px 4px;
+					text-align: center;
+					border: #655629 0px solid;
+					border-radius: 20px;
+					background: #cbd1db;
+					padding-top:20px;
+					margin-top:10px;
+	}
+	
+	
+	#forms {
+			width: 580px;
+			float: left;
+			margin: 0 auto;
+			margin-top:10px;
+			padding: 20px;
+			text-align: left;
+			background: #dadfe8;
+			border: #655629 0px solid;
+			border-radius: 20px;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			position: relative;
+	}
+	
+	
+	
+	
+	/*extra space */
+	.clearfloat {
+				clear: both;
+				height: 0;
+				font-size: 1px;
+				line-height: 0;
+	}	
+
+
+/* location page colume */
+.column1, .column2 {
+	float: left;
+	width: 400; 
+	margin: 10px 80px 10px 80px;
+}
+/* menu page  */
+
+ul.navbar li{float:left}
+ul.navbar li a,.w3-navbar li .w3-input{display:block;padding:8px 16px}
+ul.navbar li a:hover{color:#000;background-color:#ccc}
+ul.navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+ul.navbar:hover,
+ul.navbar:first-child,
+ul.navbar-click{position:static}
+
+ul.navbar ul 	{ visibility: hidden; position: absolute; }
+ul.navbar ul li { background-color:#ccc; color: #000; 
+		 float: none; float:left}
+ul.navbar ul{list-style-type:none;margin:0;padding:0;overflow:hidden}								 
+.menucolumn {
+	text-align: center;
+	width: 91%;
+}			
+/* location page colume */
+.mcolumn1, .mcolumn2, .mcolume3 {
+	float: left;
+	width: 25%; 
+	margin: 10px 80px 10px 80px;					  
+}
+.mcolume3{margin-right: 0%;}
+
