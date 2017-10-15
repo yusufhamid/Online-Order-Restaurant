@@ -1,0 +1,191 @@
+<?php
+// Start the session
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Order</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/coffe9.jpg">
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<script type="text/javascript" src="../javascript/javascript.js"></script>
+	<!-- Angularjs library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<style>
+/*Background image one in middle*/
+.bgimg-1{
+		background-image: url("../images/online1.jpg");
+		min-height: 300px;
+		}
+
+/*Sidebar at left side of page */
+#sidebar{
+		width: 280px;
+		float: right;
+		margin: 0 auto;
+		text-align: center;
+		margin-top:300px;
+		}
+</style>
+
+<body>
+	<!--side navbar -->
+	<nav class="sidenav h" style="display:none" id="mySidenav">
+	  <a href="javascript:void(0)" class="effect"onclick="click_close()"><button>Close &times;</button></a>
+	  <a class="effect" href="../OnlineOrder/online1.html">Online Orders</a>
+	  <a class="effect" href="../coffee/location.html">Location</a>
+	  <a class="effect" href="../coffee/menu.html">Menu</a>
+	  <a class="effect" href="../coffee/about.html">About</a>
+	  <a class="effect" href="../jobs/apply.html">Jobs</a>
+	</nav>
+	
+	<div id="main"><!--This is JS for side navigation -->
+		<div class="top h"><!--keeps navbar on top -->
+
+			<!--horizontal navbar -->
+			<ul class="navbar black" id="myNavbar">
+				<li><span class="xlarge effect" onclick="click_open()" id="openNav">&#9776;</span></li>
+				<li><a class="effect" href="../home.html">Home</a></li>
+			</ul>
+		</div><!--End of top navbar-->
+
+
+		<!--first background image attached-->
+		<div class="bgimg-1"></div>
+
+		<!--first page content -->
+		<div class="page " ng-app=""> 
+			<div id="forms">
+				<form method="post" action="online2.php" >
+				
+					<h4>*Earn a Free cookies for every $100 spent</h4>
+					Pick up date: 
+					<input type="date" name="date" value="2017-02-28">
+					Pick up time:
+					<input type="time"  name="time" value="09:00">
+					<br><br>
+					
+					<img src="../images/burger.png" alt="Burger" height="100" width="100">
+					Burger 9.95
+					<select name="Burger" id="Burger">
+						<option value="0">0 </option>
+						<option value="1">1 </option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+						
+					<select name="Burgerptn" id="Select" ng-model="burger" >
+						<option value="">Choose </option>
+						<option value="House Burger $9.95">House Burger</option>
+						<option value="Garden Burger $9.95">Garden Burger </option>
+						<option value="American Burger $9.95">American Burger </option>
+					</select>
+					<br><br>
+					
+					<img src="../images/gyro.png" alt="Burger" height="100" width="100">
+					Gyro 10.95
+					<select name="Gyro" id="Gyro" >
+						<option value="0">0 </option>
+						<option value="1">1 </option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					
+					<select name="Gyroptn" id="Select" ng-model="gyro">
+						<option value=""> Choose</option>
+						<option value="Steak Gyro $10.95">Steak Gyro</option>
+						<option value="Chicken Gyro $10.95">Chicken Gyro</option>
+					</select>
+					<br><br>
+
+					<img src="../images/panini.png" alt="Burger" height="100" width="100">
+					Panini 11.95
+					<select name="Panini" id="Gyro" >
+						<option value="0">0 </option>
+						<option value="1">1 </option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					
+					<select name="Paniniptn" id="Select" ng-model="panini">
+						<option value="">Choose</option>
+						<option value="Tuna Panini $11.95">Tuna Panini</option>
+						<option value="Chicken Panini $11.95">Chicken Panini</option>
+						<option value="Tibbs Panini $11.95">Tibbs Panini</option>
+					</select>
+					<br><br><br>
+					
+					Who is this item for? 
+					<input type="text" name="Name" id="Name" placeholder="Name" ng-model="name" /><br><br>
+
+					<center><button class="buttdesign"> Continue</button></h3></center><br>
+				</form>
+			</div><!--End of id forms -->
+				
+			<div id="sidebar">
+				<div id="sidebarContent"><!-- contents located in sidebar -->
+					<aside>
+						Your name: <br>
+						{{name}} <br><br>
+						
+						Your order: <br>
+						{{burger}} <br>{{gyro}} <br> {{panini}} <br><br><br>	
+					</aside>
+				</div> 	<!-- end sidebarContent -->
+			</div>	<!-- end sidebar -->
+			
+			<!--extra spaces -->
+			<br class="clearfloat" />
+			
+		</div><!--end of class page -->
+
+		<!--Footer end of webpage -->
+		<footer>
+			<!--Button that takes you to the top -->
+			<a href="#"><button class="buttdesign"> ↑ To the top </button></a><br>
+			
+			<center>
+			<!--Social media images connected with link -->
+			Connect with us on social media<br><br>
+			
+			<a href="https://www.facebook.com/CafeRio/" target="_blank">
+			<img src="../images/fb.png" alt="Burger" height="50" width="50">
+					 
+			<a href="https://twitter.com/caferio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+			<img src="../images/twitter.png" alt="Burger" height="50" width="50">
+			
+			<a href="https://www.instagram.com/caferio/" target="_blank">
+			<img src="../images/instagram.png" alt="Burger" height="50" width="50"></a><br><br>
+								
+			<!--Subscription box -->
+			<input type="text" placeholder="Name">
+			<input type="text" placeholder="Email">
+			<button>Subscribe</button><br><br><br>
+			
+			<p>&copy; 2017 by Cafe Avole. All rights reserved.<p>
+			</center>
+		</footer>
+	</div><!--End of id="main"-->
+
+<script>
+	//Google Analytic code to track the customer
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-93022647-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
