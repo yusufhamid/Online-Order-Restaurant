@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>location Avole </title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/coffe9.jpg">
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<script type="text/javascript" src="../javascript/javascript.js"></script>
+</head>
+
+<style>
+	
+/*Background image one in middle*/
+.bgimg-1{
+		background-image: url("../images/slide3.jpg");
+		min-height: 500px;
+		}
+</style>
+
+<body>
+	<!--side navbar -->
+	<nav class="sidenav h" style="display:none" id="mySidenav">
+	  <a href="javascript:void(0)" class="effect"onclick="click_close()"><button>Close &times;</button></a>
+	  <a class="effect" href="../OnlineOrder/online1.html">Online Orders</a>
+	  <a class="effect" href="../coffee/location.html">Location</a>
+	  <a class="effect" href="../coffee/menu.html">Menu</a>
+	  <a class="effect" href="../coffee/about.html">About</a>
+	  <a class="effect" href="../jobs/apply.html">Jobs</a>
+	</nav>
+
+	<div id="main"><!--This is JS for side navigation -->
+		<div class="top h"><!--keeps navbar on top -->
+
+			<!--horizontal navbar -->
+			<ul class="navbar black" id="myNavbar">
+				<li><span class="xlarge effect" onclick="click_open()" id="openNav">&#9776;</span></li>
+				<li><a class="effect" href="../home.html">Home</a></li>
+				<li><a class="effect" href="../coffee/menu.html">Menu</a></li>
+				<li><a class="effect" href="../OnlineOrder/online1.html">Order Now →</a></li>
+			</ul>
+		</div><!--End of top navbar-->
+
+		<div class="bgimg-1"></div>
+
+		<!--first page content -->
+		<div class="page">
+			<div class="column1">
+				<h3>Location</h3>
+				<p>6630 raubuer ave s, Seattle, Washinton</p>
+				<img src="../images/locationshop.JPG" width="250" height="250" >
+			</div>
+			
+			<div class="column2">
+				<h3>Map</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4129.705249231865!2d-122.27431255992141!3d47.542591259867535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549069ff1cf4fc19%3A0x737111dc08d9fdb1!2s6630+Rainier+Ave+S%2C+Seattle%2C+WA+98118!5e0!3m2!1sen!2sus!4v1488068227834" width="400" height="250" frameborder="0" style="border:0" class="column2"allowfullscreen></iframe>
+			</div>
+				<h2>Opening Hours</h2>
+				<center>
+					<p>Sunday...................9AM-3PM</p>
+					<p>Monday..................7AM-6PM</p>
+					<p>Tuesday..................7AM-6PM</p>
+					<p>Wednesday.............7AM-6PM</p>
+					<p>Thursday................7AM-6PM</p>
+					<p>Friday....................7AM-6PM</p>
+					<p>Saturday................8AM-6AM</p>
+				</center>
+		</div>
+  
+
+		<!--Footer end of webpage -->
+		<footer>
+			<!--Button that takes you to the top -->
+			<a href="#"><button class="buttdesign"> ↑ To the top </button></a><br>
+			
+			<center>
+				<!--Social media images connected with link -->
+				Connect with us on social media<br><br>
+				
+				<a href="https://www.facebook.com/CafeRio/" target="_blank">
+				<img src="../images/fb.png" alt="Burger" height="50" width="50">
+						 
+				<a href="https://twitter.com/caferio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+				<img src="../images/twitter.png" alt="Burger" height="50" width="50">
+				
+				<a href="https://www.instagram.com/caferio/" target="_blank">
+				<img src="../images/instagram.png" alt="Burger" height="50" width="50"></a><br><br>
+									
+				<!--Subscription box -->
+				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Email">
+				<button>Subscribe</button><br><br><br>
+				
+				&copy; 2017 by Cafe Avole. All rights reserved.
+			</center>
+		</footer>
+	</div><!--End of id="main"-->
+
+</body>
+</html>

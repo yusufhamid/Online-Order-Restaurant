@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Avole </title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/coffe9.jpg">
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>	
+	<script type="text/javascript" src="../javascript/javascript.js"></script>
+</head>
+
+<style>
+/*Background image one in middle*/
+.bgimg-1{
+		background-image: url("../images/slide2.gif");
+		min-height: 400px;
+		}
+
+/*Background image two in middle*/
+.bgimg-2{
+		background-image: url("../images/try.jpg");
+		min-height: 400px;
+		background-position: top;
+		}
+</style>
+
+<body>
+	<!--side navbar -->
+	<nav class="sidenav h" style="display:none" id="mySidenav">
+	  <a href="javascript:void(0)" class="effect"onclick="click_close()"><button>Close &times;</button></a>
+	  <a class="effect" href="../OnlineOrder/online1.html">Online Orders</a>
+	  <a class="effect" href="../coffee/location.html">Location</a>
+	  <a class="effect" href="../coffee/menu.html">Menu</a>
+	  <a class="effect" href="../coffee/about.html">About</a>
+	  <a class="effect" href="../jobs/apply.html">Jobs</a>
+	</nav>
+
+	<div id="main"><!--This is JS for side navigation -->
+		<div class="top h"><!--keeps navbar on top -->
+
+			<!--horizontal navbar -->
+			<ul class="navbar black" id="myNavbar">
+				<li><span class="xlarge effect" onclick="click_open()" id="openNav">&#9776;</span></li>
+				<li><a class="effect" href="../home.html">Home</a></li>
+				<li><a class="effect" href="../coffee/menu.html">Menu</a></li>
+				<li><a class="effect" href="../OnlineOrder/online1.html">Order Now →</a></li>
+			</ul>
+		</div><!--End of top navbar-->
+
+		<!--Attached first picture-->
+		<div class="bgimg-1"></div>
+
+
+		<!--first page content -->
+		<div class="page">
+			<div class="menucolumn">
+			<h1 cite id="menu1">Menu</h1>
+			<img align="left" src="../images/coffe10.png" height="100" width="100"></a>
+
+			</div>
+			<div class="mcolumn1">
+			<h3>Coffee</h3>
+			<p>Ethiplam Coffee 7.98</p>
+			<p>Mocha 7.98</p>
+			<p>Late 7.98</p>
+			<p>Espresso 7.98</p>
+			</div>
+			<div class="mcolumn2">
+			<h3>Breakfast</h3>
+			<p>Traditional xxx 8.95</p>
+			<p>Stuffed French Toast 9.95</p>
+			<p>Garden Omelet 9.95</p>
+			<p>Avole Omelet 9.95</p>
+			<p>Eggcellent Sandwich 6.95</p>
+			</div>
+			
+			<div class="mcolumn3">
+			
+			<h3>Quick Bites</h3>
+			<p>Naches 5.95</p>
+			<p>Fresh Guacamole 5.95</p>
+			<p>Turkey Melt 5.95</p>
+			<p>Cold Turkey 3.95</p>
+			<p>Roast Beef 4.95</p>
+			<p>Grilled Cheese 2.95</p>
+			</div>
+		</div>
+  
+		<!--first background image -->
+		<div class="bgimg-2"></div>
+
+		<!--second page content -->
+		<div class="page"> 
+		
+				<a href="../OnlineOrder/online1.html" target="_blank">
+				<img align="right" src="../images/order.png" height="100" width="100"></a>
+
+			<div class="menucolumn">
+				<h1 cite id="menu2">Menu</h1>
+			</div>
+
+			<div class="mcolumn1">
+				<h3>Burgers</h3>
+				<p>Tibbe Panini 11.95</p>
+				<p>Garden Burger 10.95</p>
+			
+			
+			</div>
+			
+			<div class="mcolumn2">
+				<h3>Panini</h3>
+				<p>Chicken Panini 10.95</p>
+				<p>Tuna Panini </p>
+				<p>Tibbe Panini 11.95</p>
+			</div>
+			
+			<div class="mcolumn3">
+			<br \>
+			<h3>Vegetarian</h3>
+				<p>Veggie Melt 10.95</p>
+				<p>Cypress Melt 8.95</p>
+				<p>Veggie Salad   9.95</p>
+			</div>
+
+		</div>
+
+		<!--Footer end of webpage -->
+		<footer>
+			<!--Button that takes you to the top -->
+			<a href="#"><button class="buttdesign"> ↑ To the top </button></a><br>
+			
+			<center>
+				<!--Social media images connected with link -->
+				Connect with us on social media<br><br>
+				
+				<a href="https://www.facebook.com/CafeRio/" target="_blank">
+				<img src="../images/fb.png" alt="Burger" height="50" width="50">
+						 
+				<a href="https://twitter.com/caferio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+				<img src="../images/twitter.png" alt="Burger" height="50" width="50">
+				
+				<a href="https://www.instagram.com/caferio/" target="_blank">
+				<img src="../images/instagram.png" alt="Burger" height="50" width="50"></a><br><br>
+									
+				<!--Subscription box -->
+				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Email">
+				<button>Subscribe</button><br><br><br>
+				
+				&copy; 2017 by Cafe Avole. All rights reserved.
+			</center>
+		</footer>
+	</div><!--End of id="main"-->
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Avole </title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/coffe9.jpg">
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<script type="text/javascript" src="../javascript/javascript.js"></script>
+</head>
+
+<style>
+/*Background image one in middle*/
+.bgimg-1{
+		background-image: url("../images/sol.PNG");
+		min-height: 600px;
+		background-position: top;
+		}
+
+/*Background image two in middle*/
+.bgimg-2{
+		background-image: url("../images/locationshop.JPG");
+		min-height: 400px;
+		background-position: top;
+		}
+</style>
+
+<body>
+	<!--side navbar -->
+	<nav class="sidenav h" style="display:none" id="mySidenav">
+	  <a href="javascript:void(0)" class="effect"onclick="click_close()"><button>Close &times;</button></a>
+	  <a class="effect" href="../OnlineOrder/online1.html">Online Orders</a>
+	  <a class="effect" href="../coffee/location.html">Location</a>
+	  <a class="effect" href="../coffee/menu.html">Menu</a>
+	  <a class="effect" href="../coffee/about.html">About</a>
+	  <a class="effect" href="../jobs/apply.html">Jobs</a>
+	</nav>
+
+	<div id="main"><!--This is JS for side navigation -->
+		<div class="top h"><!--keeps navbar on top -->
+
+			<!--horizontal navbar -->
+			<ul class="navbar black" id="myNavbar">
+				<li><span class="xlarge effect" onclick="click_open()" id="openNav">&#9776;</span></li>
+				<li><a class="effect" href="../home.html">Home</a></li>
+				<li><a class="effect" href="../coffee/menu.html">Menu</a></li>
+				<li><a class="effect" href="../OnlineOrder/online1.html">Order Now →</a></li>
+			</ul>
+		</div><!--End of top navbar-->
+		<!--First slideshow picture -->
+		<div class="bgimg-1"></div>
+
+		<!--first page content --> 
+		<div class="page">
+			<h3>Story</h3>
+			<img align="right" src="../images/fund.PNG" height="200" width="200">
+			<p>Solomon Dubie's Ethiopian coffee shop Caf� Avole will open on March 12, exactly one year after </br>
+			its partially successful Indiegogo campaign ended. With the help of over $5,000 raised through </br>
+			the crowdfunding site, 27-year-old Dubie transformed Rainier Mini Mart.</br><br>
+
+			The idea to open Avole first came to Dubie when he was a junior at Eastern Washington </br>
+			University. "I was trying to figure out what I wanted to do after college, and I've always wanted to </br>
+			create something big and meaningful," Dubie explains. "One morning an inspirational idea hit me</br>
+			to maybe explore coffee � ??and why not Ethiopian coffee? And that led me to the journey of Avole."</br><br>
+
+			After finding that bank loans were hard to get and investors hard to find, though, the young </br>
+			entrepreneur chose to raise funding from his community.</p>
+		</div>
+  
+		<!--first background image -->
+		<div class="bgimg-2"></div>
+
+		<!--second page content -->
+		<div class="page"> 
+			<h4>Our Mission</h4>
+			<p>His goals for Avole are to share and innovate Ethiopian coffee culture, introduce Ethiopian</br>
+			products, and to make an impact in global and community outreach, as well as to provide</br> 
+			opportunities within a coffee organization.</br>
+			While Seattle has no shortage of coffee, Dubie is hopeful that people will get to know the</br>
+			complex and interesting Ethiopian coffee culture. "People of Seattle should know that Ethiopian</br> 
+			coffee is not only coffee beans from the birthplace of coffee, but that for Ethiopia and Ethiopians,</br>
+			Ethiopian coffee is what has fueled the economy's social way of life," Dubie says. "Farmers take</br>
+			pride in offering quality coffee that is shared and critiqued amongst each other and around the world." </br>
+
+			The cafe's name comes from the traditional Ethiopian coffee ceremony, which involves different</br> 
+			brewing techniques throughout the process, with the first cup called the "Avole" � pronounced "A-bol."</p>
+
+			<a href="../OnlineOrder/online1.html" target="_blank">
+			<img align="right" src="../images/order.png" height="150" width="150"></a>
+
+			<h5>Hours</h5>
+			<p> Monday - saturday <b>7:00 A.M - 8:00 P.M </b></p>
+			<p> Closed on Sundays </p></br>
+			
+			<script>
+			document.getElementById("date").innerHTML = Date();    
+			</script>
+		</div>
+
+		<!--Footer end of webpage -->
+		<footer>
+			<!--Button that takes you to the top -->
+			<a href="#"><button class="buttdesign"> ↑ To the top </button></a><br>
+			
+			<center>
+				<!--Social media images connected with link -->
+				Connect with us on social media<br><br>
+				
+				<a href="https://www.facebook.com/CafeRio/" target="_blank">
+				<img src="../images/fb.png" alt="Burger" height="50" width="50">
+						 
+				<a href="https://twitter.com/caferio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+				<img src="../images/twitter.png" alt="Burger" height="50" width="50">
+				
+				<a href="https://www.instagram.com/caferio/" target="_blank">
+				<img src="../images/instagram.png" alt="Burger" height="50" width="50"></a><br><br>
+									
+				<!--Subscription box -->
+				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Email">
+				<button>Subscribe</button><br><br><br>
+				
+				&copy; 2017 by Cafe Avole. All rights reserved..
+			</center>
+		</footer>
+	</div><!--End of id="main"-->
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 6000);    
+}
+</script>
+
+</body>
+</html>
+
